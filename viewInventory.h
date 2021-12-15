@@ -10,12 +10,13 @@ void viewInventory(int option){
     //in the event of an error
 	char words[50],id[5], ch, exit; 
 	
+	system("CLS");
 	if(option==1){
 		printf("FULL ITEM LIST: \n");
 	}
 	
 	FILE *fp;
-	fp=fopen("Inventory.csv","r");
+	fp=fopen("Inventory_ST_NoBOM.csv","r");
 	//checks if file is empty, will exit when it is
 	if (NULL != fp) {
     	fseek (fp, 0, SEEK_END);
@@ -34,7 +35,7 @@ void viewInventory(int option){
 		}
 	}
 	fclose(fp);
-	fp=fopen("Inventory.csv","r");
+	fp=fopen("Inventory_ST_NoBOM.csv","r");
 	
 	printf("\n%-40s%-40s%-40s%-40s%s","Item ID","Item Description","Quantity","Expiration Date","Price(PHP)");
 	printf("\n----------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n");
@@ -103,9 +104,4 @@ void viewInventory(int option){
 	printf("\t\t\t\t\t\t\t\t---------------END OF LINE---------------");
 	printf("\n----------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n");
 	fclose(fp);
-}
-
-int main(){
-	viewInventory(1);
-//	viewInventory(51101);
 }

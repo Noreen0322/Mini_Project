@@ -4,7 +4,8 @@
 #include <ctype.h>
 #include "functions.h"
 
-int add_file() {
+
+void add_file() {
 	int item_id = 0, item_quantity = 0, item_check;
 	char item_description[20], item_date[11], choice = 'Y';
 	float item_price = 0;

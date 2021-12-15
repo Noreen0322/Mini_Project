@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
-#include "add_item.h"
 
 int push_item(int item_id, char item_description[20], int item_quantity, char item_date[10], double item_price) {
 	int retVal = 0;

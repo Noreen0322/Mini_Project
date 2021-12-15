@@ -3,6 +3,7 @@
 #include <string.h>
 #include <ctype.h>
 #include "add_item.h"
+#include "viewInventory.h"
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 void main() {
@@ -28,6 +29,9 @@ void main() {
 				break;
 			case 'C':
 				//view inventory list
+				printf("I'm in.");
+				viewInventory(1);
+				getch();
 				break;
 			case 'D':
 				//search for an inventory item
