@@ -2,8 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
-#include "main.c"
-#include "functions.c"
+#include "functions.h"
 
 int add_file() {
 	int item_id = 0, item_quantity = 0, item_check;
