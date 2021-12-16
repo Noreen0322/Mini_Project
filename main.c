@@ -4,6 +4,7 @@
 #include <ctype.h>
 #include "add_item.h"
 #include "viewInventory.h"
+#include "search_item.h"
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 void main() {
@@ -34,7 +35,7 @@ void main() {
 				getch();
 				break;
 			case 'D':
-				//search for an inventory item
+				search_item();
 				break;
 			case 'X':
 				printf("\nThank you for using the program!\nProgram now closing.");

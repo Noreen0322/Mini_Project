@@ -63,7 +63,3 @@ int search_item() {
 	fclose(fpointer);
 	return (0); 
 }
-
-int main() {
-	search_item();
-}
